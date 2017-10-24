@@ -15,6 +15,7 @@ a. 3 tipuri de elemente defensive:
   - dovleac static, nu pot trece inamicii pentru o perioada de timp
   - dovleac cu abilitati de tragere cu gloante - poate fi upgradat 
   - dovleac dinamic care se roteste si nimiceste toti inamicii
+  
 b. 3 tipuri de inamici:
   - liliac - elementul cu cea mai putina viata
   - fantoma - element cu rezistenta sporita
