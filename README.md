@@ -26,3 +26,5 @@ Scopul jocului este de a-ti proteja obiectivul.
 Unity Tips (includes some coding style guidelines): http://devmag.org.za/2012/07/12/50-tips-for-working-with-unity-best-practices/
 
 ![alt text](https://www.gamasutra.com/db_area/images/blogger/1003893/Message%20Bus.png "Arhitectura")
+
+Arhitectura: MVC
