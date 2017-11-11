@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/halloweenAttack/Scenes/scene2.unity
+- path: Assets/halloweenAttack/Scenes/DesignScene.unity
   isLoaded: 1
   isActive: 1
