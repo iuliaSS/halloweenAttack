@@ -17,8 +17,8 @@ public class PumpkinManager : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update () {	
-		if (!EventSystem.current.IsPointerOverGameObject () && clickedSelection != null) {
+	void Update () {
+        if (!EventSystem.current.IsPointerOverGameObject () && clickedSelection != null) {
 			if (Input.GetMouseButtonDown (0)) {
 				Vector3 mousePosition = Input.mousePosition;
 				Vector3 targetPosition = Camera.main.ScreenToWorldPoint (new Vector3 (mousePosition.x, mousePosition.y, distance));
