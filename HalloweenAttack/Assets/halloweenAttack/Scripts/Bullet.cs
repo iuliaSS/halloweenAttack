@@ -21,7 +21,7 @@ public class Bullet : MonoBehaviour {
         {
             nextActionTime += time;
 			GameObject instanceBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            instanceBullet.GetComponent<Rigidbody>().velocity = instanceBullet.transform.right * speed;
+			instanceBullet.GetComponent<Rigidbody>().velocity = instanceBullet.transform.right * speed;
             Destroy(instanceBullet, 15);
         }
     }

@@ -11,7 +11,7 @@ public class GeneratingEnemies : MonoBehaviour {
 	IEnumerator Start () {
 		float[] y;
 		int random;
-		y = new float[] {3.5f, 1.4f, -0.8f};
+		y = new float[] {3.3f, 1.2f, -1.1f};
 		yield return new WaitForSeconds (time);
 	
 		for (int i = 0; i < 10; i++)
@@ -19,8 +19,8 @@ public class GeneratingEnemies : MonoBehaviour {
 			yield return new WaitForSeconds (15);
 			GameObject instance = Instantiate(prefab);
 			random = Random.Range(0, 3);
-			prefab.transform.transform.position = new Vector3 (10, y[random], 0);
-			Destroy(instance, 20);
+			prefab.transform.position = new Vector3 (10, y[random], 0);
+			Destroy(instance, 40);
 		}
 	}
 	

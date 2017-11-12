@@ -8,11 +8,11 @@ public class Movement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		speed = -0.03f;
+		speed = -1f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		transform.Translate(speed, 0f, 0f);
+		transform.Translate(speed * Time.deltaTime, 0f, 0f);
 	}
 }
