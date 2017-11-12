@@ -27,7 +27,10 @@ public class PumpkinManager : MonoBehaviour {
 					Vector3 mousePosition = Input.mousePosition;
 					Vector3 targetPosition = Camera.main.ScreenToWorldPoint (new Vector3 (mousePosition.x, mousePosition.y, distance));
 					PlacePumpkin (targetPosition);
-				}
+				} else
+                {
+                    Hover.Instance.Deactivate();
+                }
 			}
 		}
 	}
@@ -43,13 +46,13 @@ public class PumpkinManager : MonoBehaviour {
     }
 
     void PlacePumpkin(Vector3 position) {
-            GameObject pumpkin = Instantiate (clickedSelection.pumpkinPrefab, position, Quaternion.identity);
+        GameObject pumpkin = Instantiate (clickedSelection.pumpkinPrefab, position, Quaternion.identity);
 		    if (pumpkin.tag == "Rotating")
 		    {
 			    Rotate rotate = pumpkin.AddComponent<Rotate> () as Rotate;
-			    Destroy(pumpkin, 10.0f);
+			    Destroy(pumpkin, 10);
 		    }
-		    if (pumpkin.tag == "Shooting")
+	    if (pumpkin.tag == "Shooting")
 		    {
 			    Bullet bullet = pumpkin.AddComponent<Bullet> () as Bullet;
                 pumpkin.AddComponent<PumpkinClick>();
@@ -58,7 +61,8 @@ public class PumpkinManager : MonoBehaviour {
 			    bullet.time = 6;
 		    }
 
-            Hover.Instance.Deactivate();
+        Hover.Instance.Deactivate();
+        this.clickedSelection = null;
     }
 
 	public void PickPumpkin(PumpkinSelection selection) {

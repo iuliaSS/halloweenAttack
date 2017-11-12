@@ -20,9 +20,9 @@ public class Bullet : MonoBehaviour {
         if (Time.time >= nextActionTime)
         {
             nextActionTime += time;
-            var instanceBullet = (GameObject)Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+			GameObject instanceBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             instanceBullet.GetComponent<Rigidbody>().velocity = instanceBullet.transform.right * speed;
-            Destroy(instanceBullet, 15.0f);
+            Destroy(instanceBullet, 15);
         }
     }
 }

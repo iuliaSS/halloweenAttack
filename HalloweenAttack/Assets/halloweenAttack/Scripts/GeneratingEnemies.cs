@@ -17,9 +17,10 @@ public class GeneratingEnemies : MonoBehaviour {
 		for (int i = 0; i < 10; i++)
 		{
 			yield return new WaitForSeconds (15);
-			Instantiate(prefab);
+			GameObject instance = Instantiate(prefab);
 			random = Random.Range(0, 3);
 			prefab.transform.transform.position = new Vector3 (10, y[random], 0);
+			Destroy(instance, 20);
 		}
 	}
 	
