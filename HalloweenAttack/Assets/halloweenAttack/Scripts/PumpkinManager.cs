@@ -41,6 +41,7 @@ public class PumpkinManager : MonoBehaviour {
 		if (pumpkin.tag == "Shooting")
 		{
 			Bullet bullet = pumpkin.AddComponent<Bullet> () as Bullet;
+            pumpkin.AddComponent<PumpkinClick>();
 			bullet.bulletPrefab = Resources.Load("HealthFullBlue") as GameObject;
 			bullet.speed = -5;
 			bullet.time = 6;
