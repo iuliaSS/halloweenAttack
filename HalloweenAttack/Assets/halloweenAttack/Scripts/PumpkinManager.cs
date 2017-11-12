@@ -50,7 +50,7 @@ public class PumpkinManager : MonoBehaviour {
 		    if (pumpkin.tag == "Rotating")
 		    {
 			    Rotate rotate = pumpkin.AddComponent<Rotate> () as Rotate;
-			    Destroy(pumpkin, 10.0f);
+			    Destroy(pumpkin, 10);
 		    }
 	    if (pumpkin.tag == "Shooting")
 		    {
