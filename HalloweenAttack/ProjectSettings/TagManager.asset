@@ -9,6 +9,8 @@ TagManager:
   - Exploding
   - Tombstone
   - Enemy
+  - Bullet
+  - BlueBullet
   layers:
   - Default
   - TransparentFX
