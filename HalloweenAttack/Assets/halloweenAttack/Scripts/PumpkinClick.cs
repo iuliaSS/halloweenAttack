@@ -17,13 +17,22 @@ public class PumpkinClick : MonoBehaviour {
     private void OnMouseDown()
     {
         Bullet bullet = gameObject.GetComponent<Bullet>() as Bullet;
+		if (bullet.time == 3)
+		{
+			if (ScoreScript.scoreValue >= 20) {
+				bullet.time = 1;
+				ScoreScript.scoreValue = 0;
+			} else
+				PumpkinManager.hasMoney = -1;
+		}
+
         if (bullet.time == 6)
         {
-            bullet.time = 3;
-        } else if (bullet.time == 3)
-        {
-            bullet.time = 1;
-            //TODO: ERASE ALL MONEY
-        }
+			if (ScoreScript.scoreValue >= 15) {
+				bullet.time = 3;
+				ScoreScript.scoreValue -= 15;
+			} else
+				PumpkinManager.hasMoney = -1;
+        } 
     }
 }

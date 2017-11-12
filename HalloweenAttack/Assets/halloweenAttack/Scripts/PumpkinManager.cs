@@ -10,7 +10,7 @@ public class PumpkinManager : MonoBehaviour {
 	public PumpkinSelection clickedSelection;
 	float distance=10f;
     private string message = "You don't have enough money!";
-    private int hasMoney;
+	public static int hasMoney;
 
     // Use this for initialization
     void Start () {
@@ -21,9 +21,13 @@ public class PumpkinManager : MonoBehaviour {
 	void Update () {
         if (!EventSystem.current.IsPointerOverGameObject () && clickedSelection != null) {
 			if (Input.GetMouseButtonDown (0)) {
-				Vector3 mousePosition = Input.mousePosition;
-				Vector3 targetPosition = Camera.main.ScreenToWorldPoint (new Vector3 (mousePosition.x, mousePosition.y, distance));
-				PlacePumpkin (targetPosition);
+				hasMoney = BuyPumpkin(clickedSelection.pumpkinPrefab);
+
+				if (hasMoney == 0) {
+					Vector3 mousePosition = Input.mousePosition;
+					Vector3 targetPosition = Camera.main.ScreenToWorldPoint (new Vector3 (mousePosition.x, mousePosition.y, distance));
+					PlacePumpkin (targetPosition);
+				}
 			}
 		}
 	}
@@ -39,10 +43,6 @@ public class PumpkinManager : MonoBehaviour {
     }
 
     void PlacePumpkin(Vector3 position) {
-        hasMoney = BuyPumpkin(clickedSelection.pumpkinPrefab);
-
-        if (hasMoney == 0)
-        {
             GameObject pumpkin = Instantiate (clickedSelection.pumpkinPrefab, position, Quaternion.identity);
 		    if (pumpkin.tag == "Rotating")
 		    {
@@ -59,13 +59,11 @@ public class PumpkinManager : MonoBehaviour {
 		    }
 
             Hover.Instance.Deactivate();
-        }
-        clickedSelection = null;
     }
 
 	public void PickPumpkin(PumpkinSelection selection) {
 		this.clickedSelection = selection;
-        Hover.Instance.Activate(selection.Sprite);
+	        Hover.Instance.Activate(selection.Sprite);
 	}
 
     public int BuyPumpkin(GameObject pumpkin)

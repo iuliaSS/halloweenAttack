@@ -55,14 +55,18 @@
      <Compile Include="Assets\halloweenAttack\Scripts\Collisions.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\EnemyLife.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\GeneratingEnemies.cs" />
+     <Compile Include="Assets\halloweenAttack\Scripts\Hover.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\Layer.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\Movement.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\Point.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\Pumpkin.cs" />
+     <Compile Include="Assets\halloweenAttack\Scripts\PumpkinClick.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\PumpkinCollisions.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\PumpkinManager.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\PumpkinSelection.cs" />
      <Compile Include="Assets\halloweenAttack\Scripts\Rotate.cs" />
+     <Compile Include="Assets\halloweenAttack\Scripts\ScoreScript.cs" />
+     <Compile Include="Assets\halloweenAttack\Scripts\Singleton.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
