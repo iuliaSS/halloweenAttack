@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212911845438521344}
   - component: {fileID: 54527331678775622}
   - component: {fileID: 65331536645611116}
-  - component: {fileID: 114729233973024124}
   - component: {fileID: 114342891607784312}
   m_Layer: 0
   m_Name: BostanSelect1
@@ -80,17 +79,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f19df83e3f071046b371b63cb0548d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114729233973024124
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1163615826881064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb2cafaede4a1ac44abd81d03a1fe9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &212911845438521344

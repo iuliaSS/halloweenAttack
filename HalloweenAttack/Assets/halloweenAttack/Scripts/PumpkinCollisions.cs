@@ -10,7 +10,7 @@ public class PumpkinCollisions : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider collider) {
-		if (collider.gameObject.tag == "Enemy") {
+		if (tag != "Shooting" && collider.gameObject.tag == "Enemy") {
             EnemyLife enemyLife = collider.gameObject.GetComponent<EnemyLife>();
             ScoreScript.scoreValue += enemyLife.getPoints();
             Destroy(collider.gameObject);
