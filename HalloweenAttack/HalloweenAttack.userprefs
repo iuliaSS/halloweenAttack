@@ -1,10 +1,14 @@
-﻿<Properties StartupItem="HalloweenAttack.csproj">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Raggedy Witch - Halloween\Scripts\PumpkinManager.cs">
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\halloweenAttack\Scripts\Collisions.cs">
     <Files>
-      <File FileName="Assets\Raggedy Witch - Halloween\Scripts\Movement.cs" Line="1" Column="1" />
-      <File FileName="Assets\Raggedy Witch - Halloween\Scripts\GeneratingEnemies.cs" Line="13" Column="14" />
-      <File FileName="Assets\Raggedy Witch - Halloween\Scripts\PumpkinManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\halloweenAttack\Scripts\PumpkinSelection.cs" Line="8" Column="1" />
+      <File FileName="Assets\halloweenAttack\Scripts\PumpkinManager.cs" Line="45" Column="22" />
+      <File FileName="Assets\halloweenAttack\Scripts\Bullet.cs" Line="9" Column="20" />
+      <File FileName="Assets\halloweenAttack\Scripts\Collisions.cs" Line="9" Column="44" />
+      <File FileName="Assets\halloweenAttack\Scripts\Layer.cs" Line="12" Column="2" />
+      <File FileName="Assets\halloweenAttack\Scripts\PumpkinCollisions.cs" Line="7" Column="41" />
+      <File FileName="Assets\halloweenAttack\Scripts\GeneratingEnemies.cs" Line="12" Column="13" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

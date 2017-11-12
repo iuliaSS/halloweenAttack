@@ -33,7 +33,19 @@ public class PumpkinManager : MonoBehaviour {
 
 	void PlacePumpkin(Vector3 position) {
 		GameObject pumpkin = Instantiate (clickedSelection.pumpkinPrefab, position, Quaternion.identity);
-		BuyPumpkin ();
+		if (pumpkin.tag == "Rotating")
+		{
+			Rotate rotate = pumpkin.AddComponent<Rotate> () as Rotate;
+			Destroy(pumpkin, 10.0f);
+		}
+		if (pumpkin.tag == "Shooting")
+		{
+			Bullet bullet = pumpkin.AddComponent<Bullet> () as Bullet;
+			bullet.bulletPrefab = Resources.Load("HealthFullBlue") as GameObject;
+			bullet.speed = -5;
+			bullet.time = 6;
+		}
+		BuyPumpkin ();			
 	}
 
 	public void PickPumpkin(PumpkinSelection selection) {
