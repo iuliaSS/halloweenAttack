@@ -46,11 +46,14 @@ public class PumpkinManager : MonoBehaviour {
 			bullet.speed = -5;
 			bullet.time = 6;
 		}
+
+        Hover.Instance.Deactivate();
 		BuyPumpkin ();			
 	}
 
 	public void PickPumpkin(PumpkinSelection selection) {
 		this.clickedSelection = selection;
+        Hover.Instance.Activate(selection.Sprite);
 	}
 
 	public void BuyPumpkin() {

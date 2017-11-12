@@ -5,9 +5,19 @@ using UnityEngine;
 public class PumpkinSelection : MonoBehaviour {
 	[SerializeField]
 	public GameObject pumpkinPrefab;
+    [SerializeField]
+    private Sprite sprite;
 
-	// Use this for initialization
-	void Start () {
+    public Sprite Sprite
+    {
+        get
+        {
+            return sprite;
+        }
+    }
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
