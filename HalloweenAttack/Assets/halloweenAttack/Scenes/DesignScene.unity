@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465934, g: 0.49642956, b: 0.5748249, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -17993,6 +17993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1249317973578634, guid: 56ecff0acf8eb174ab36b09f2e2fb847, type: 2}
   time: 5
+  generatedEnemies: 0
 --- !u!114 &279787578
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37269,6 +37270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1290824702791506, guid: 9611265ce234d944d93d5d99fcb7b087, type: 2}
   time: 0
+  generatedEnemies: 0
 --- !u!114 &645391941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46694,6 +46696,92 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 618
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &831982457
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 831982458}
+  - component: {fileID: 831982461}
+  - component: {fileID: 831982460}
+  - component: {fileID: 831982459}
+  m_Layer: 5
+  m_Name: LevelText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &831982458
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831982457}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -12, y: 7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1205310693}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 38, y: -43}
+  m_SizeDelta: {x: 5, y: 1}
+  m_Pivot: {x: 0, y: 1}
+--- !u!114 &831982459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831982457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecde1220203ce6d439450620cd76311d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &831982460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831982457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.7843138, g: 0.42352945, b: 0.14901961, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 0c20adec848f6ad43b2636a0cd507553, type: 3}
+    m_FontSize: 1
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Level: 1'
+--- !u!222 &831982461
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 831982457}
 --- !u!1 &832596664
 GameObject:
   m_ObjectHideFlags: 0
@@ -66451,6 +66539,7 @@ RectTransform:
   m_Children:
   - {fileID: 1303029568}
   - {fileID: 545194355}
+  - {fileID: 831982458}
   m_Father: {fileID: 0}
   m_RootOrder: 1521
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -73278,7 +73367,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c96eae4b87227b43b3c61ae8762b052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderer: {fileID: 0}
 --- !u!1 &1335408038
 GameObject:
   m_ObjectHideFlags: 0
@@ -95813,6 +95901,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1644939079466418, guid: 7b5c36297fab8ee41b2003968cc0e8bb, type: 2}
   time: 10
+  generatedEnemies: 0
 --- !u!114 &1795571158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95833,7 +95922,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1795571154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c50bf072ae8c04a86f323cfb31c05d, type: 3}
+  m_Script: {fileID: 11500000, guid: 74ef1f44f490aad409d37a29d6a5e6e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!95 &1795571160
