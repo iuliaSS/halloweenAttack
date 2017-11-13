@@ -20,6 +20,7 @@ public class Hover : Singleton<Hover> {
     {
         Vector3 mousePosition = Input.mousePosition;
         Vector3 targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, 10f));
+        targetPosition.z = -0.1f;
         transform.position = targetPosition;
         transform.localScale = new Vector3(0.15f, 0.15f);
     }

@@ -8,7 +8,7 @@ public class PumpkinManager : MonoBehaviour {
 	[SerializeField]
 	public GameObject p1Selection, p2Selection, p3Selection;
 	public PumpkinSelection clickedSelection;
-	float distance=10f;
+	float distance = 10f;
     private string message = "You don't have enough money!";
 	public static int hasMoney;
 
@@ -26,6 +26,7 @@ public class PumpkinManager : MonoBehaviour {
 				if (hasMoney == 0) {
 					Vector3 mousePosition = Input.mousePosition;
 					Vector3 targetPosition = Camera.main.ScreenToWorldPoint (new Vector3 (mousePosition.x, mousePosition.y, distance));
+                    targetPosition.z = -0.1f;
 					PlacePumpkin (targetPosition);
 				} else
                 {
