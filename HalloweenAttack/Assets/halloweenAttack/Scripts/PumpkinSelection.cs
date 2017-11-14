@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Gestioneaza dovleacul selectat
+ */
 public class PumpkinSelection : MonoBehaviour {
 	[SerializeField]
 	public GameObject pumpkinPrefab;

@@ -2,9 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Retine coordonatele de pe harta si permite operatii primitive cu acestea
+ */
 public struct Point {
-	public int X { get; set; }
-	public int Y { get; set; }
+
+
+    /**
+     *  Coordonata X
+     */
+    public int X { get; set; }
+
+    /**
+     * Coordonata Y
+     */
+    public int Y { get; set; }
 
 	public Point(int x, int y) {
 		this.X = x;

@@ -1,12 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+ * Generare de proiectile
+ * 
+ */
 public class Bullet : MonoBehaviour {
 
+    /**
+     * Tipul de proiectil
+     */
     public GameObject bulletPrefab;
+
+    /**
+     * Viteza proiectulului
+     */
     public float speed;
+
+    /**
+     * Timpul la care este lansat
+     */
     public float time;
+
     private float nextActionTime;
 
     // Use this for initialization

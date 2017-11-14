@@ -3,14 +3,34 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+
+/**
+ * Coordoneaza tot procesul de amplasare a unui dovleac pe harta, inclusiv costul acestuia 
+ */
 public class PumpkinManager : MonoBehaviour {
-	
-	[SerializeField]
-	public GameObject p1Selection, p2Selection, p3Selection;
-	public PumpkinSelection clickedSelection;
-	float distance = 10f;
+
+
+
+    /**
+     * Cele 3 tipuri de dovleci
+     */
+    [SerializeField]
+    public GameObject p1Selection, p2Selection, p3Selection;
+
+    /**
+     * Dovleacul selectat
+     */
+    public PumpkinSelection clickedSelection;
+
+    float distance = 10f;
+
     private string message = "You don't have enough money!";
-	public static int hasMoney;
+
+
+    /**
+     * Indica daca utilizatorul mai are destui bani pentru a cumpara dovleacul
+     */
+    public static int hasMoney;
 
     // Use this for initialization
     void Start () {

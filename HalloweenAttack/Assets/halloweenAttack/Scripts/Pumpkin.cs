@@ -2,9 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Permite deplasarea dovleacului pana la amplasare
+ */
 public class Pumpkin {
 
-	public Point GridPosition { get; set;}
+
+    /**
+     * Pozitie curenta
+     */
+    public Point GridPosition { get; set;}
 	[SerializeField]
 	public SpriteRenderer spriteRenderer;
 

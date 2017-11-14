@@ -2,9 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Gestioneaza nivelul vietii inamicului
+ */
 public class EnemyLife : MonoBehaviour {
 
-	public int life;
+    /**
+     * Nivelul vietii
+     */
+    public int life;
+
+    /**
+     * Numar de puncte primite in cazul in care este doborat
+     */
     private int points;
 
     void Start(){

@@ -2,8 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Se ocupa de coliziunile elementelor defensive cu inamicii si proiectilele acestora
+ */
 public class PumpkinCollisions : MonoBehaviour {
-	private int shootingLife;
+
+    /**
+     * Viata curenta a acestui element
+     */
+    private int shootingLife;
 
 	void Start(){
 		shootingLife = 10;

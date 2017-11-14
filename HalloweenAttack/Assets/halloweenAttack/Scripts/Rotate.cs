@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * Se ocupa de miscarea de rotatie a dovleacului rotativ
+ */
 public class Rotate : MonoBehaviour {
 
 	// Use this for initialization

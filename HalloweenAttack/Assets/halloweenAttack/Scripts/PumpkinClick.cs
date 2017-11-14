@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Se ocupa de upgradarea elementului defensiv
+ */
 public class PumpkinClick : MonoBehaviour {
 
 	// Use this for initialization

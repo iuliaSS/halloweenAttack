@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/**
+ * Gestioneaza actiunile in momentul pierderii
+ */
 public class YouLoose : MonoBehaviour {
 
 	private string message = "You loose!";

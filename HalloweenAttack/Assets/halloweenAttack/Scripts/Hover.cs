@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * Controleaza miscarea dovleacului dupa mouse pana la plasarea pe harta
+ */
 public class Hover : Singleton<Hover> {
 
     public SpriteRenderer spriteRenderer;

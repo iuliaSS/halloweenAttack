@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+/**
+ * 
+ * Se ocupa cu controlul coliziunilor inamicilor cu dovlecii
+ * 
+ */
 public class Collisions : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider collider) {
